@@ -17,7 +17,7 @@ import psycopg2
 from psycopg2 import sql
 
 # Configuration
-BOT_TOKEN = os.getenv('MAGNET_BOT')
+BOT_TOKEN = os.getenv('7216005183:AAH0gxIj9a__jO5rX6aqCfEpicyItKDMzIc')
 DB_URL = os.getenv('DATABASE_URL')
 CHANNEL_LINK = "https://t.me/signalxmi"
 GROUP_LINK = "https://t.me/+pJBigpG3O8c4ZTc0"
@@ -114,10 +114,10 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     # Task 1: Join Channel
     if query.data == 'start_airdrop':
-        keyboard = [[InlineKeyboardButton("Join Channel", url=https://t.me/signalxmi)]]
+        keyboard = [[InlineKeyboardButton("Join Channel", url=CHANNEL_LINK)]]
         await query.edit_message_text(
             "📢 Task 1/3: Join our Telegram Channel\n"
-            f"Link: {https://t.me/signalxmi}\n\n"
+            f"Link: {url=CHANNEL_LINK}\n\n"
             "Click below to join then press Done",
             reply_markup=InlineKeyboardMarkup([
                 *keyboard,
@@ -141,10 +141,10 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
         conn.close()
         
         # Task 2: Join Group
-        keyboard = [[InlineKeyboardButton("Join Group", url=https://t.me/+pJBigpG3O8c4ZTc0)]]
+        keyboard = [[InlineKeyboardButton("Join Group", url=GROUP_LINK)]]
         await query.edit_message_text(
             "👥 Task 2/3: Join our Telegram Group\n"
-            f"Link: {https://t.me/+pJBigpG3O8c4ZTc0}\n\n"
+            f"Link: {url=GROUP_LINK}\n\n"
             "⚠️ Hope you didn't cheat the system; all tasks will be verified manually before your airdrop withdrawal is processed\n\n"
             "Click below to join then press Done",
             reply_markup=InlineKeyboardMarkup([
