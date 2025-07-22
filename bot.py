@@ -117,7 +117,7 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
         keyboard = [[InlineKeyboardButton("Join Channel", url=CHANNEL_LINK)]]
         await query.edit_message_text(
             "📢 Task 1/3: Join our Telegram Channel\n"
-            f"Link: {url=CHANNEL_LINK}\n\n"
+            f"Link: {CHANNEL_LINK}\n\n"  # FIXED HERE
             "Click below to join then press Done",
             reply_markup=InlineKeyboardMarkup([
                 *keyboard,
@@ -144,7 +144,7 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
         keyboard = [[InlineKeyboardButton("Join Group", url=GROUP_LINK)]]
         await query.edit_message_text(
             "👥 Task 2/3: Join our Telegram Group\n"
-            f"Link: {url=GROUP_LINK}\n\n"
+            f"Link: {GROUP_LINK}\n\n"  # FIXED HERE
             "⚠️ Hope you didn't cheat the system; all tasks will be verified manually before your airdrop withdrawal is processed\n\n"
             "Click below to join then press Done",
             reply_markup=InlineKeyboardMarkup([
@@ -171,8 +171,8 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Task 3: Follow Socials
         await query.edit_message_text(
             "🔗 Task 3/3: Follow us on Social Media\n\n"
-            f"Twitter: {https://x.com/chaels_001}\n"
-            f"Medium: {https://x.com/chaels_001}\n\n"
+            f"Twitter: {TWITTER_LINK}\n"
+            f"Medium: {MEDIUM_LINK}\n\n"
             "Press Done after following both",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("✅ Done", callback_data='task3_done')]
