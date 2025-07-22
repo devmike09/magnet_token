@@ -114,7 +114,7 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     # Task 1: Join Channel
     if query.data == 'start_airdrop':
-        keyboard = [[InlineKeyboardButton("Join Channel", https://t.me/signalxmi)]]
+        keyboard = [[InlineKeyboardButton("Join Channel", url=https://t.me/signalxmi)]]
         await query.edit_message_text(
             "📢 Task 1/3: Join our Telegram Channel\n"
             f"Link: {https://t.me/signalxmi}\n\n"
@@ -141,7 +141,7 @@ async def handle_tasks(update: Update, context: ContextTypes.DEFAULT_TYPE):
         conn.close()
         
         # Task 2: Join Group
-        keyboard = [[InlineKeyboardButton("Join Group", https://t.me/+pJBigpG3O8c4ZTc0)]]
+        keyboard = [[InlineKeyboardButton("Join Group", url=https://t.me/+pJBigpG3O8c4ZTc0)]]
         await query.edit_message_text(
             "👥 Task 2/3: Join our Telegram Group\n"
             f"Link: {https://t.me/+pJBigpG3O8c4ZTc0}\n\n"
